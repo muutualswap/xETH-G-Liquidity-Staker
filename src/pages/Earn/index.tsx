@@ -59,7 +59,7 @@ export default function Earn() {
               </RowBetween>{' '}
               <ExternalLink
                 style={{ color: 'white', textDecoration: 'underline' }}
-                href="https://medium.com/@xethtoken"
+                href="https://xeth.medium.com/introducing-xeth-g-xeth-with-governance-the-next-revolutionary-step-in-the-xeth-ecosystem-1ff8d6bebc76"
                 target="_blank"
               >
                 <TYPE.white fontSize={14}>Read more about xETH-G</TYPE.white>

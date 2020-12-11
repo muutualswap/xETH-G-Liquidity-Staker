@@ -299,7 +299,7 @@ export default function Header() {
           </XplosiveIcon>
         </Title>
         <HeaderLinks>
-          <StyledExternalLink id={`home-nav-link`} href={'https://www.xeth.finance/'}>
+          <StyledExternalLink id={`home-nav-link`} href={'https://xeth-g.finance/'}>
             {t('Home')}
           </StyledExternalLink>
           <StyledNavLink
@@ -318,7 +318,7 @@ export default function Header() {
           <StyledNavLink id={`stake-nav-link`} to={'/xETH-G'}>
             Liquidity Staking
           </StyledNavLink>
-          <StyledExternalLink id={`info-nav-link`} href={'https://info.uniswap.org/pair/0xac0fe6c0b239eedcc12bc3e997e5492b04cc61c3'}>
+          <StyledExternalLink id={`info-nav-link`} href={'https://info.uniswap.org/pair/0x6ff249432df165f209782995dc27c9c53bd11ee1'}>
             xETH-G Chart <span style={{ fontSize: '11px' }}>↗</span>
           </StyledExternalLink>
         </HeaderLinks>
