@@ -11,7 +11,7 @@ export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
 type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
-export const XETHG = new Token(ChainId.MAINNET, '0xC8B2D5B86E412E59625F45D069F7436F07B22b0B', 18, 'xETH-G', 'xETH-G')
+export const XETHG = new Token(ChainId.MAINNET, '0x3863ea7577fc91bfbaeae6a6a3e403524afcf787', 18, 'xETH-G', 'xETH-G')
 export const DAI = new Token(ChainId.MAINNET, '0x6B175474E89094C44Da98b954EedeAC495271d0F', 18, 'DAI', 'Dai Stablecoin')
 export const USDC = new Token(ChainId.MAINNET, '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 6, 'USDC', 'USD//C')
 export const USDT = new Token(ChainId.MAINNET, '0xdAC17F958D2ee523a2206206994597C13D831ec7', 6, 'USDT', 'Tether USD')
@@ -30,7 +30,7 @@ export const GOVERNANCE_ADDRESS = '0x5e4be8Bc9637f0EAA1A755019e06A68ce081D58F'
 export const TIMELOCK_ADDRESS = '0x1a9C8182C09F50C8318d769245beA52c32BE35BC'
 
 //changed to xeth
-const UNI_ADDRESS = '0xC8B2D5B86E412E59625F45D069F7436F07B22b0B'
+const UNI_ADDRESS = '0x3863ea7577fc91bfbaeae6a6a3e403524afcf787'
 export const xETHG: { [chainId in ChainId]: Token } = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, UNI_ADDRESS, 18, 'xETH-G', 'xETH-G'),
   [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, UNI_ADDRESS, 18, 'xETH-G', 'xETH-G'),
