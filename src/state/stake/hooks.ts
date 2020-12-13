@@ -39,12 +39,12 @@ export const STAKING_REWARDS_INFO: {
   [ChainId.MAINNET]: [
     {
       tokens: [WETH[ChainId.MAINNET], XETHG],
-      stakingRewardAddress: '0x81D11Dc5Af82Ed795c68572B7eAa3CdcEF315FCA',
+      stakingRewardAddress: '0x022E6461E01AF241A81B2e6A661111efa852e976',
     }
   ]
 }
 
-const StakingCollectionAddress = '0x3698E1cC8EA7338c484fEDd319713a81d3466C22'
+const StakingCollectionAddress = '0xC8B2D5B86E412E59625F45D069F7436F07B22b0B'
 
 export interface StakingInfo {
   stakingCollectionAddress: string
