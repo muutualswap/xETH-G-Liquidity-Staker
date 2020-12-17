@@ -54,7 +54,12 @@ export default function Earn() {
               </RowBetween>
               <RowBetween>
                 <TYPE.white fontSize={14}>
-                  Deposit your Liquidity Provider tokens to receive XETH-G, rebases are split amongst pool member distributed in staking rewards!
+                  Deposit your Liquidity Provider tokens and earn XETH-G!
+                </TYPE.white>
+              </RowBetween>{' '}
+              <RowBetween>
+                <TYPE.white fontSize={14}>
+                Total rewards are 43,333 xETH/week. 23,333 are distributed by the staking rewards pool automatically, and 20,000 will be distributed via airdrop every Sunday at 20:00 UTC for all still in the pool, proportional to time and amount staked.
                 </TYPE.white>
               </RowBetween>{' '}
               <ExternalLink
