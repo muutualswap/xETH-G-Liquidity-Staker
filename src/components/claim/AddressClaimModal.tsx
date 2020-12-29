@@ -113,7 +113,7 @@ export default function AddressClaimModal({ isOpen, onDismiss }: { isOpen: boole
           </ModalUpper>
           <AutoColumn gap="md" style={{ padding: '1rem', paddingTop: '0' }} justify="center">
             <TYPE.subHeader fontWeight={500}>
-              Enter an address to trigger a UNI claim. If the address has any claimable UNI it will be sent to them on
+              Enter an address to trigger a BGSP claim. If the address has any claimable BGSP it will be sent to them on
               submission.
             </TYPE.subHeader>
             <AddressInputPanel value={typed} onChange={handleRecipientType} />
@@ -128,7 +128,7 @@ export default function AddressClaimModal({ isOpen, onDismiss }: { isOpen: boole
               mt="1rem"
               onClick={onClaim}
             >
-              Claim UNI
+              Claim BGSP
             </ButtonPrimary>
           </AutoColumn>
         </ContentWrapper>
@@ -170,7 +170,7 @@ export default function AddressClaimModal({ isOpen, onDismiss }: { isOpen: boole
                   <span role="img" aria-label="party-hat">
                     🎉{' '}
                   </span>
-                  Welcome to team Unicorn :){' '}
+                  Welcome to team Elephant :){' '}
                   <span role="img" aria-label="party-hat">
                     🎉
                   </span>
