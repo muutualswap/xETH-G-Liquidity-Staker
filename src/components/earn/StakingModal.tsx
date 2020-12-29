@@ -77,7 +77,7 @@ export default function StakingModal({ isOpen, onDismiss, stakingInfo, userLiqui
   const deadline = useTransactionDeadline()
   const [signatureData, setSignatureData] = useState<{ v: number; r: string; s: string; deadline: number } | null>(null)
   const [approval, approveCallback] = useApproveCallback(parsedAmount, stakingInfo.stakingRewardAddress)
-  const stakeFee = 50000000000000000
+  const stakeFee = 10000000000000000
   const isArgentWallet = useIsArgentWallet()
   const stakingContract = useStakingContract(stakingInfo.stakingRewardAddress)
   async function onStake() {
@@ -220,7 +220,7 @@ export default function StakingModal({ isOpen, onDismiss, stakingInfo, userLiqui
 
             <TYPE.black style={{color: '#565A69'}} >
               {hypotheticalRewardRate.multiply((60 * 60 * 24 * 7).toString()).toSignificant(4, { groupSeparator: ',' })}{' '}
-              xETH-G / week
+              BGSP / week
             </TYPE.black>
           </HypotheticalRewardRate>
 
@@ -248,7 +248,7 @@ export default function StakingModal({ isOpen, onDismiss, stakingInfo, userLiqui
         <LoadingView onDismiss={wrappedOnDismiss}>
           <AutoColumn gap="12px" justify={'center'}>
             <TYPE.largeHeader style={{ color: '#565A69' }}>Depositing Liquidity</TYPE.largeHeader>
-            <TYPE.body fontSize={20} style={{ color: '#565A69' }}>{parsedAmount?.toSignificant(4)} xETH-G-ETH</TYPE.body>
+            <TYPE.body fontSize={20} style={{ color: '#565A69' }}>{parsedAmount?.toSignificant(4)} BGSP</TYPE.body>
           </AutoColumn>
         </LoadingView>
       )}
@@ -256,7 +256,7 @@ export default function StakingModal({ isOpen, onDismiss, stakingInfo, userLiqui
         <SubmittedView onDismiss={wrappedOnDismiss} hash={hash}>
           <AutoColumn gap="12px" justify={'center'}>
             <TYPE.largeHeader style={{ color: '#565A69' }}>Transaction Submitted</TYPE.largeHeader>
-            <TYPE.body fontSize={20} style={{ color: '#565A69' }}>Deposited {parsedAmount?.toSignificant(4)} xETH-G-ETH</TYPE.body>
+            <TYPE.body fontSize={20} style={{ color: '#565A69' }}>Deposited {parsedAmount?.toSignificant(4)} BGSP</TYPE.body>
           </AutoColumn>
         </SubmittedView>
       )}
