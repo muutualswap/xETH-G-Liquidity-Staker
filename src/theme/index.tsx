@@ -216,7 +216,7 @@ html {
 }
 div[data-reach-dialog-content] a
 {
-  color:#FFE600 ;
+  color:#FFFFFF ;
 }
 #center-logo
 {
