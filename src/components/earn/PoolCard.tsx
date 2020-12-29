@@ -158,7 +158,7 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
               </span>
               {`${stakingInfo.rewardRate
                 ?.multiply(`${60 * 60 * 24 * 7}`)
-                ?.toSignificant(4, { groupSeparator: ',' })} xETH-G / week`}
+                ?.toSignificant(4, { groupSeparator: ',' })} BGSP / week`}
             </TYPE.black>
           </BottomSection>
         </>
