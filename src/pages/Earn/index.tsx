@@ -50,16 +50,16 @@ export default function Earn() {
           <CardSection>
             <AutoColumn gap="md">
               <RowBetween>
-                <TYPE.white fontWeight={600}>XETH-G liquidity mining</TYPE.white>
+                <TYPE.white fontWeight={600}>BGSP liquidity mining</TYPE.white>
               </RowBetween>
               <RowBetween>
                 <TYPE.white fontSize={14}>
-                  Deposit your Liquidity Provider tokens and earn XETH-G!
+                  Deposit your Liquidity Provider tokens and earn BGSP!
                 </TYPE.white>
               </RowBetween>{' '}
               <RowBetween>
                 <TYPE.white fontSize={14}>
-                Total rewards are 43,333 xETH/week. 23,333 are distributed by the staking rewards pool automatically, and 20,000 will be distributed via airdrop every Sunday at 20:00 UTC for all still in the pool, proportional to time and amount staked.
+                Total rewards are distributed by the staking rewards pool automatically, proportional to time and amount staked.
                 </TYPE.white>
               </RowBetween>{' '}
               <ExternalLink
@@ -67,7 +67,7 @@ export default function Earn() {
                 href="https://xeth.medium.com/introducing-xeth-g-xeth-with-governance-the-next-revolutionary-step-in-the-xeth-ecosystem-1ff8d6bebc76"
                 target="_blank"
               >
-                <TYPE.white fontSize={14}>Read more about xETH-G</TYPE.white>
+                <TYPE.white fontSize={14}>Read more about BGSP</TYPE.white>
               </ExternalLink>
             </AutoColumn>
           </CardSection>
