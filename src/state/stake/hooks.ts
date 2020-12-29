@@ -39,8 +39,24 @@ export const STAKING_REWARDS_INFO: {
   [ChainId.MAINNET]: [
     {
       tokens: [WETH[ChainId.MAINNET], XETHG],
-      stakingRewardAddress: '0x022E6461E01AF241A81B2e6A661111efa852e976',
-    }
+      stakingRewardAddress: '0x022E6461E01AF241A81B2e6A661111efa852e976'
+    },
+    {
+     tokens: [WETH[ChainId.MAINNET], XETHG],
+     stakingRewardAddress: '0x022E6461E01AF241A81B2e6A661111efa852e976'
+    },
+     {
+      tokens: [WETH[ChainId.MAINNET], XETHG],
+      stakingRewardAddress: '0x022E6461E01AF241A81B2e6A661111efa852e976'
+    },
+    {
+      tokens: [WETH[ChainId.MAINNET], XETHG],
+      stakingRewardAddress: '0x022E6461E01AF241A81B2e6A661111efa852e976'
+    },
+    {
+      tokens: [WETH[ChainId.MAINNET], XETHG],
+      stakingRewardAddress: '0x022E6461E01AF241A81B2e6A661111efa852e976'
+    }    
   ]
 }
 
