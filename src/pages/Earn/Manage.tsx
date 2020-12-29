@@ -263,7 +263,7 @@ export default function Manage({
             <AutoColumn gap="sm">
               <RowBetween>
                 <div>
-                  <TYPE.black color={'black'}>Your Unclaimed xETH-G</TYPE.black>
+                  <TYPE.black color={'black'}>Your Unclaimed BGSP</TYPE.black>
                 </div>
                 {stakingInfo?.earnedAmount && JSBI.notEqual(BIG_INT_ZERO, stakingInfo?.earnedAmount?.raw) && (
                   <ButtonEmpty
