@@ -87,11 +87,11 @@ export default function UnstakingModal({ isOpen, onDismiss, stakingInfo }: Staki
               <TYPE.body fontWeight={600} fontSize={36}style={{ color: '#565A69' }}>
                 {<FormattedCurrencyAmount currencyAmount={stakingInfo?.earnedAmount} />}
               </TYPE.body>
-              <TYPE.body style={{ color: '#565A69' }}>Unclaimed xETH-G</TYPE.body>
+              <TYPE.body style={{ color: '#565A69' }}>Unclaimed BGSP</TYPE.body>
             </AutoColumn>
           )}
           <TYPE.subHeader style={{ textAlign: 'center', color: '#565A69' }}> 
-            When you withdraw, your xETH-G is claimed and your liquidity is removed from the mining pool.
+            When you withdraw, your BGSP is claimed and your liquidity is removed from the mining pool.
           </TYPE.subHeader>
           <ButtonError disabled={!!error} error={!!error && !!stakingInfo?.stakedAmount} onClick={onWithdraw}>
             {error ?? 'Withdraw & Claim'}
@@ -102,7 +102,7 @@ export default function UnstakingModal({ isOpen, onDismiss, stakingInfo }: Staki
         <LoadingView onDismiss={wrappedOndismiss}>
           <AutoColumn gap="12px" justify={'center'}>
             <TYPE.body fontSize={20}style={{ color: '#565A69' }}>Withdrawing {stakingInfo?.stakedAmount?.toSignificant(4)} UNI-V2</TYPE.body>
-            <TYPE.body fontSize={20} style={{ color: '#565A69' }}>Claiming {stakingInfo?.earnedAmount?.toSignificant(4)} xETH-G</TYPE.body>
+            <TYPE.body fontSize={20} style={{ color: '#565A69' }}>Claiming {stakingInfo?.earnedAmount?.toSignificant(4)} BGSP</TYPE.body>
           </AutoColumn>
         </LoadingView>
       )}
@@ -111,7 +111,7 @@ export default function UnstakingModal({ isOpen, onDismiss, stakingInfo }: Staki
           <AutoColumn gap="12px" justify={'center'}>
             <TYPE.largeHeader style={{ color: '#565A69' }}>Transaction Submitted</TYPE.largeHeader>
             <TYPE.body fontSize={20}style={{ color: '#565A69' }}>Withdrew UNI-V2!</TYPE.body>
-            <TYPE.body fontSize={20}style={{ color: '#565A69' }}>Claimed xETH-G!</TYPE.body>
+            <TYPE.body fontSize={20}style={{ color: '#565A69' }}>Claimed BGSP!</TYPE.body>
           </AutoColumn>
         </SubmittedView>
       )}
