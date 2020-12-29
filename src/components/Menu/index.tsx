@@ -2,13 +2,13 @@ import React, { useRef } from 'react'
 import { BookOpen, Code, Info, MessageCircle, PieChart } from 'react-feather'
 import styled from 'styled-components'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
-// import { useActiveWeb3React } from '../../hooks'
+import { useActiveWeb3React } from '../../hooks'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
 import { ApplicationModal } from '../../state/application/actions'
 import { useModalOpen, useToggleModal } from '../../state/application/hooks'
 
 import { ExternalLink } from '../../theme'
-// import { ButtonPrimary } from '../Button'
+import { ButtonPrimary } from '../Button'
 
 const StyledMenuIcon = styled(MenuIcon)`
   path {
@@ -25,17 +25,14 @@ const StyledMenuButton = styled.button`
   padding: 0;
   height: 35px;
   background-color: ${({ theme }) => theme.bg3};
-
   padding: 0.15rem 0.5rem;
   border-radius: 0.5rem;
-
   :hover,
   :focus {
     cursor: pointer;
     outline: none;
     background-color: ${({ theme }) => theme.bg4};
   }
-
   svg {
     margin-top: 2px;
   }
@@ -65,7 +62,6 @@ const MenuFlyout = styled.span`
   top: 4rem;
   right: 0rem;
   z-index: 100;
-
   ${({ theme }) => theme.mediaWidth.upToMedium`
     top: -17.25rem;
   `};
@@ -85,16 +81,16 @@ const MenuItem = styled(ExternalLink)`
   }
 `
 
-const CODE_LINK = 'https://github.com/Uniswap/uniswap-interface'
+const CODE_LINK = 'https://github.com/MutualDEXswap/uniswap-interface'
 
 export default function Menu() {
-  // const { account } = useActiveWeb3React()
+  const { account } = useActiveWeb3React()
 
   const node = useRef<HTMLDivElement>()
   const open = useModalOpen(ApplicationModal.MENU)
   const toggle = useToggleModal(ApplicationModal.MENU)
   useOnClickOutside(node, open ? toggle : undefined)
-  // const openClaimModal = useToggleModal(ApplicationModal.ADDRESS_CLAIM)
+  const openClaimModal = useToggleModal(ApplicationModal.ADDRESS_CLAIM)
 
   return (
     // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/30451
@@ -105,7 +101,7 @@ export default function Menu() {
 
       {open && (
         <MenuFlyout>
-          <MenuItem id="link" href="https://uniswap.org/">
+          <MenuItem id="link" href="https://mutualdex.com/">
             <Info size={14} />
             About
           </MenuItem>
@@ -117,14 +113,19 @@ export default function Menu() {
             <Code size={14} />
             Code
           </MenuItem>
-          <MenuItem id="link" href="https://t.me/xETHG_Official">
+          <MenuItem id="link" href="https://discord.gg/EwFs3Pp">
             <MessageCircle size={14} />
-            Telegram
+            Discord
           </MenuItem>
-          <MenuItem id="link" href="https://uniswap.info/">
+          <MenuItem id="link" href="https://bigswap.info/">
             <PieChart size={14} />
             Analytics
           </MenuItem>
+          {account && (
+            <ButtonPrimary onClick={openClaimModal} padding="8px 16px" width="100%" borderRadius="12px" mt="0.5rem">
+              Claim BGSP
+            </ButtonPrimary>
+          )}
         </MenuFlyout>
       )}
     </StyledMenu>
